@@ -18,9 +18,6 @@ public class GameCam : MonoBehaviour {
 	public float heightDamp;
 	public float rotDamp;
 
-	float DesiredRotationalAngle;
-	float DesiredHeight;
-
 	// Use this for initialization
 	void Start () {
 	
@@ -28,6 +25,9 @@ public class GameCam : MonoBehaviour {
 
 	void UpdateRotAndTrans ()
 	{
+		
+		float DesiredRotationalAngle;
+		float DesiredHeight;
 
 
 		if (trackObj) {
